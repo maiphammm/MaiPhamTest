@@ -1,0 +1,42 @@
+<html>
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width initial-scale=1.0 user-scalable=no">
+        <title>Sudoku</title>
+
+        <link rel="stylesheet" href="sudoku.css">
+        <script src="sudoku.js"></script>
+    </head>
+
+    <body>
+        <h1>Sudoku</h1>
+        <hr>
+        <!-- Instructions Section -->
+        <div id="instructions">
+            <h2>How to Play</h2>
+            <p>The goal of Sudoku is to fill in a 9x9 grid so that each column, each row, and each of the nine 3x3 subgrids contain all of the digits from 1 to 9 exactly once.</p>
+            <p>
+                <strong>Start the Game:</strong> The game loads with some numbers already filled in as clues.<br>
+                <strong>Select a Number:</strong> Click a number (1-9) from the number panel at the bottom.<br>
+                <strong>Fill the Grid:</strong> Click an empty cell to place the selected number.<br>
+                <strong>Check for Errors:</strong> Errors are displayed at the top.<br>
+                <strong>Solve the Puzzle:</strong> Click the "Solve" button to get the solution.<br>
+            </p>
+            <p><strong>Tips:</strong> Ensure no number repeats in any row, column, or 3x3 subgrid. Use the initial clues to guide your placement.</p>
+        </div>
+        <hr>
+        <h2 id="errors">0</h2>
+        <!-- 9x9 board -->
+        <div id="board"></div>
+        <br>
+        <div id="digits">
+        </div>
+        <br>
+        <button id="solve-button">Solve</button>
+        <br><br>
+        <div id="solution"></div>
+
+    </body>
+
+
+</html>
